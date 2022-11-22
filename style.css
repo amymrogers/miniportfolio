@@ -10,12 +10,11 @@
     --color-ui-primary-button: #7BB794;
     --color-ui-primary-link: #338067;
     --color-ui-hover-bg: rgba(0,0,0,0);
-    --color-ui-gallery-hover-bg: #FffFFE;
 
     --color-bg-darker: hsl(24, 100%, 99%);
     --color-bg-lighter: hsl(24, 50%, 97%);
 
-    transition: all .24s ease-in-out;
+    --global-transition: all .24s ease-in-out;
 }
 
 html, body {
@@ -41,41 +40,61 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 24px;
+    padding: 2em;
 }
 
 .profile-card{
     display: flex;
     flex-direction: column;
-    padding: 40px 40px;
+    padding: 3em;
     background-color: #ffffff;
-    border-radius: 16px;
-    box-shadow:0 0 40px rgba(14,17,18,0.05);
-    max-width: 480px;
+    border-radius: 1em;
+    box-shadow:0 0 4em rgba(14,17,18,0.05);
+    max-width: 36em;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   25% { transform: rotate(5deg); }
+   50% { transform: rotate(0deg); }
+   75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.wiggle {
+    transition: var(--global-transition);
+    animation: none;
+  }
+
+.wiggle:hover {
+  display: inline-block;
+  animation: wiggle 1.5s infinite;
 }
 
 .footer-links{
     display: flex;
     flex-direction: row;
-    padding-top: 2em;
+    padding-top: 1.6em;
 }
 
 .footer-links a{
-    padding: 0 16px;
-    font-size: 1.2em;
-    font-family: 'Gowun Batang', sans-serif;
+    padding: 0 .8em;
+}
+
+.footer-links svg path{
+    fill: var(--color-ui-primary-link); 
 }
 
 
 h1{
     font-family: 'Gowun Batang', sans-serif;
-    font-size: 2.4em;
+    font-size: 1.6em;
     letter-spacing: -.02em;
 }
 
 p{
-    font-size: 1.32em;
-    line-height: 1.64em;
+    font-size: 1em;
+    line-height: 1.6em;
 }
 
 a{
@@ -84,4 +103,8 @@ a{
 
 a:hover{
     color: var(--black); 
+}
+
+/* Mobile view */
+@media only screen and (max-width: 680px) {
 }
