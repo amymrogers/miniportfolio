@@ -21,8 +21,6 @@
 html, body {
 margin: 0 auto !important;
 padding: 0 !important;
-height: 100% !important;
-width: 100% !important;
 color:var(--color-text-default);
 font-family: 'Alegreya Sans', sans-serif;
 }
