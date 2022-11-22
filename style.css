@@ -51,6 +51,7 @@ body.dark-theme {
         --color-bg-darker: hsl(24, 100%, 99%);
         --color-bg-lighter: hsl(24, 50%, 97%);
     }
+}
 
 
 html, body {
@@ -180,5 +181,9 @@ a:hover{
 
     .all-container{
         padding: 1em;
+    }
+
+    .full-width-right-align{
+        display: none;
     }
 }
