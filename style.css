@@ -19,21 +19,21 @@
 }
 
 html, body {
-margin: 0 auto !important;
-padding: 0 !important;
-color:var(--color-text-default);
-font-family: 'Alegreya Sans', sans-serif;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    color:var(--color-text-default);
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
 body {
-  background-color:var(--color-bg-darker);
-  background-image:
-  radial-gradient(circle at 100% 150%, var(--color-bg-darker) 24%, var(--color-bg-lighter) 24%, var(--color-bg-lighter) 28%, var(--color-bg-darker) 28%, var(--color-bg-darker) 36%, var(--color-bg-lighter) 36%, var(--color-bg-lighter) 40%, transparent 40%, transparent),
-  radial-gradient(circle at 0    150%, var(--color-bg-darker) 24%, var(--color-bg-lighter) 24%, var(--color-bg-lighter) 28%, var(--color-bg-darker) 28%, var(--color-bg-darker) 36%, var(--color-bg-lighter) 36%, var(--color-bg-lighter) 40%, transparent 40%, transparent),
-  radial-gradient(circle at 50%  100%, var(--color-bg-lighter) 10%, var(--color-bg-darker) 10%, var(--color-bg-darker) 23%, var(--color-bg-lighter) 23%, var(--color-bg-lighter) 30%, var(--color-bg-darker) 30%, var(--color-bg-darker) 43%, var(--color-bg-lighter) 43%, var(--color-bg-lighter) 50%, var(--color-bg-darker) 50%, var(--color-bg-darker) 63%, var(--color-bg-lighter) 63%, var(--color-bg-lighter) 71%, transparent 71%, transparent),
-  radial-gradient(circle at 100% 50%, var(--color-bg-lighter) 5%, var(--color-bg-darker) 5%, var(--color-bg-darker) 15%, var(--color-bg-lighter) 15%, var(--color-bg-lighter) 20%, var(--color-bg-darker) 20%, var(--color-bg-darker) 29%, var(--color-bg-lighter) 29%, var(--color-bg-lighter) 34%, var(--color-bg-darker) 34%, var(--color-bg-darker) 44%, var(--color-bg-lighter) 44%, var(--color-bg-lighter) 49%, transparent 49%, transparent),
-  radial-gradient(circle at 0    50%, var(--color-bg-lighter) 5%, var(--color-bg-darker) 5%, var(--color-bg-darker) 15%, var(--color-bg-lighter) 15%, var(--color-bg-lighter) 20%, var(--color-bg-darker) 20%, var(--color-bg-darker) 29%, var(--color-bg-lighter) 29%, var(--color-bg-lighter) 34%, var(--color-bg-darker) 34%, var(--color-bg-darker) 44%, var(--color-bg-lighter) 44%, var(--color-bg-lighter) 49%, transparent 49%, transparent);
-  background-size: 80px 40px;
+    background-color:var(--color-bg-darker);
+    background-image:
+    radial-gradient(circle at 100% 150%, var(--color-bg-darker) 24%, var(--color-bg-lighter) 24%, var(--color-bg-lighter) 28%, var(--color-bg-darker) 28%, var(--color-bg-darker) 36%, var(--color-bg-lighter) 36%, var(--color-bg-lighter) 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, var(--color-bg-darker) 24%, var(--color-bg-lighter) 24%, var(--color-bg-lighter) 28%, var(--color-bg-darker) 28%, var(--color-bg-darker) 36%, var(--color-bg-lighter) 36%, var(--color-bg-lighter) 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, var(--color-bg-lighter) 10%, var(--color-bg-darker) 10%, var(--color-bg-darker) 23%, var(--color-bg-lighter) 23%, var(--color-bg-lighter) 30%, var(--color-bg-darker) 30%, var(--color-bg-darker) 43%, var(--color-bg-lighter) 43%, var(--color-bg-lighter) 50%, var(--color-bg-darker) 50%, var(--color-bg-darker) 63%, var(--color-bg-lighter) 63%, var(--color-bg-lighter) 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, var(--color-bg-lighter) 5%, var(--color-bg-darker) 5%, var(--color-bg-darker) 15%, var(--color-bg-lighter) 15%, var(--color-bg-lighter) 20%, var(--color-bg-darker) 20%, var(--color-bg-darker) 29%, var(--color-bg-lighter) 29%, var(--color-bg-lighter) 34%, var(--color-bg-darker) 34%, var(--color-bg-darker) 44%, var(--color-bg-lighter) 44%, var(--color-bg-lighter) 49%, transparent 49%, transparent),
+    radial-gradient(circle at 0    50%, var(--color-bg-lighter) 5%, var(--color-bg-darker) 5%, var(--color-bg-darker) 15%, var(--color-bg-lighter) 15%, var(--color-bg-lighter) 20%, var(--color-bg-darker) 20%, var(--color-bg-darker) 29%, var(--color-bg-lighter) 29%, var(--color-bg-lighter) 34%, var(--color-bg-darker) 34%, var(--color-bg-darker) 44%, var(--color-bg-lighter) 44%, var(--color-bg-lighter) 49%, transparent 49%, transparent);
+    background-size: 80px 40px;
 }
 
 .all-container{
