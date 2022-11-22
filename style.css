@@ -14,6 +14,8 @@
 
     --color-bg-darker: hsl(24, 100%, 99%);
     --color-bg-lighter: hsl(24, 50%, 97%);
+
+    transition: all .24s ease-in-out;
 }
 
 html, body {
@@ -22,6 +24,7 @@ padding: 0 !important;
 height: 100% !important;
 width: 100% !important;
 color:var(--color-text-default);
+font-family: 'Alegreya Sans', sans-serif;
 }
 
 body {
@@ -40,7 +43,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 2.4em;
+    padding: 24px;
 }
 
 .profile-card{
@@ -60,20 +63,20 @@ body {
 }
 
 .footer-links a{
-    padding: 0 1em;
+    padding: 0 16px;
+    font-size: 14px;
 }
 
 
 h1{
     font-family: 'Gowun Batang', sans-serif;
-    font-size: 2.4em;
+    font-size: 28px;
     letter-spacing: -.02em;
 }
 
 p{
-    font-size: 1.32em;
-    font-family: 'Alegreya Sans', sans-serif;
-    line-height: 1.64em;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 a{
@@ -82,22 +85,4 @@ a{
 
 a:hover{
     color: var(--black); 
-}
-
-table {
-border-spacing: 0 !important;
-border-collapse: collapse !important;
-table-layout: fixed !important;
-margin: 0 auto !important;
-}
-
-td.button {
-background-color: #FDFBF2;
-padding: 12px 12px;
-}
-a.button {
-color: #0D100E;
-font-size: 1.25em;
-font-weight: 900;
-display: inline-block;
 }
