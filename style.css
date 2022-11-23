@@ -6,8 +6,8 @@
 
 /* Default colors */
 body {
-    --color-primary-link: hsl(163, 24%, 51%);
-    --color-primary-link-hover: hsl(185, 34%, 30%);
+    --color-primary-link: #216384;
+    --color-primary-link-hover: #0D3957;
 
     --color-text-default: #0E110F;
     --color-card-background: #ffffff;
@@ -17,8 +17,8 @@ body {
 }
 /* Dark theme colors */
 body.dark-theme {
-    --color-primary-link: hsl(185, 34%, 30%);
-    --color-primary-link-hover: hsl(163, 24%, 51%);
+    --color-primary-link: #49879B;
+    --color-primary-link-hover: #75AEBD;
 
     --color-text-default: #ffffff;
     --color-card-background: #0e110f;
@@ -31,8 +31,8 @@ body.dark-theme {
 @media (prefers-color-scheme: dark) {
     /* defaults to dark theme */
     body {
-        --color-primary-link: hsl(185, 34%, 30%);
-        --color-primary-link-hover: hsl(163, 24%, 51%);
+        --color-primary-link: #49879B;
+        --color-primary-link-hover: #75AEBD;
 
         --color-text-default: #ffffff;
         --color-card-background: #0e110f;
@@ -42,8 +42,8 @@ body.dark-theme {
     }
     /* Override dark mode with light mode styles if the user decides to swap */
     body.light-theme {
-        --color-primary-link: hsl(163, 24%, 51%);
-        --color-primary-link-hover: hsl(185, 34%, 30%);
+        --color-primary-link: #216384;
+        --color-primary-link-hover: #0D3957;
 
         --color-text-default: #0E110F;
         --color-card-background: #ffffff;
