@@ -1,80 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Gowun+Batang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&family=Brygada+1918&display=swap');
 
 /* Default colors */
-body {
-    --color-primary-link: #216384;
-    --color-primary-link-hover: #0D3957;
+:root {
+    --color-primary-hover: #E8BFB5;
+    --color-primary-link: #CB4242;
+    --color-primary-link-hover: #DD823A;
 
-    --color-text-default: #0E110F;
-    --color-card-background: #ffffff;
+    --color-text-default: #163736;
+    --color-card-background: #EED8D2;
 
-    --color-bg-darker: hsl(24, 100%, 99%);
+    --color-background: #163736;
+
+    /*
+    --color-bg-darker: hsl(24, 22%, 53%);
     --color-bg-lighter: hsl(24, 50%, 97%);
-}
-/* Dark theme colors */
-body.dark-theme {
-    --color-primary-link: #49879B;
-    --color-primary-link-hover: #75AEBD;
-
-    --color-text-default: #ffffff;
-    --color-card-background: #0e110f;
-
-    --color-bg-darker: hsl(24, 100%, 1%);
-    --color-bg-lighter: hsl(24, 50%, 2%);
+    */
 }
 
-/* Styles for users who prefer dark mode at the OS level */
-@media (prefers-color-scheme: dark) {
-    /* defaults to dark theme */
-    body {
-        --color-primary-link: #49879B;
-        --color-primary-link-hover: #75AEBD;
-
-        --color-text-default: #ffffff;
-        --color-card-background: #0e110f;
-
-        --color-bg-darker: hsl(24, 100%, 1%);
-        --color-bg-lighter: hsl(24, 50%, 2%);
-    }
-    /* Override dark mode with light mode styles if the user decides to swap */
-    body.light-theme {
-        --color-primary-link: #216384;
-        --color-primary-link-hover: #0D3957;
-
-        --color-text-default: #0E110F;
-        --color-card-background: #ffffff;
-    
-        --color-bg-darker: hsl(24, 100%, 99%);
-        --color-bg-lighter: hsl(24, 50%, 97%);
-    }
+::selection {
+    background: var(--color-primary-hover);
 }
-
 
 html, body {
     margin: 0 auto !important;
     padding: 0 !important;
     color:var(--color-text-default);
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: 16px;
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 1rem;
 }
 
 body {
-    background-color:var(--color-bg-darker);
-    background-image:
-    radial-gradient(circle at 100% 150%, var(--color-bg-darker) 24%, var(--color-bg-lighter) 24%, var(--color-bg-lighter) 28%, var(--color-bg-darker) 28%, var(--color-bg-darker) 36%, var(--color-bg-lighter) 36%, var(--color-bg-lighter) 40%, transparent 40%, transparent),
-    radial-gradient(circle at 0    150%, var(--color-bg-darker) 24%, var(--color-bg-lighter) 24%, var(--color-bg-lighter) 28%, var(--color-bg-darker) 28%, var(--color-bg-darker) 36%, var(--color-bg-lighter) 36%, var(--color-bg-lighter) 40%, transparent 40%, transparent),
-    radial-gradient(circle at 50%  100%, var(--color-bg-lighter) 10%, var(--color-bg-darker) 10%, var(--color-bg-darker) 23%, var(--color-bg-lighter) 23%, var(--color-bg-lighter) 30%, var(--color-bg-darker) 30%, var(--color-bg-darker) 43%, var(--color-bg-lighter) 43%, var(--color-bg-lighter) 50%, var(--color-bg-darker) 50%, var(--color-bg-darker) 63%, var(--color-bg-lighter) 63%, var(--color-bg-lighter) 71%, transparent 71%, transparent),
-    radial-gradient(circle at 100% 50%, var(--color-bg-lighter) 5%, var(--color-bg-darker) 5%, var(--color-bg-darker) 15%, var(--color-bg-lighter) 15%, var(--color-bg-lighter) 20%, var(--color-bg-darker) 20%, var(--color-bg-darker) 29%, var(--color-bg-lighter) 29%, var(--color-bg-lighter) 34%, var(--color-bg-darker) 34%, var(--color-bg-darker) 44%, var(--color-bg-lighter) 44%, var(--color-bg-lighter) 49%, transparent 49%, transparent),
-    radial-gradient(circle at 0    50%, var(--color-bg-lighter) 5%, var(--color-bg-darker) 5%, var(--color-bg-darker) 15%, var(--color-bg-lighter) 15%, var(--color-bg-lighter) 20%, var(--color-bg-darker) 20%, var(--color-bg-darker) 29%, var(--color-bg-lighter) 29%, var(--color-bg-lighter) 34%, var(--color-bg-darker) 34%, var(--color-bg-darker) 44%, var(--color-bg-lighter) 44%, var(--color-bg-lighter) 49%, transparent 49%, transparent);
-    background-size: 80px 40px;
-}
-
-.btn-toggle-dark-light{
-    padding: 0;
-    background:rgba(0,0,0,0);
-    border: 0;
-    color: var(--color-text-default);
-    font-size: 0.5em;
+    background-color:var(--color-background);
+    --grid-color: #1F4A48;
+    --grid-size: 1.5rem;
+    background-image: linear-gradient(var(--grid-color) 1px, transparent 1px),
+          linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+    background-size: var(--grid-size) var(--grid-size),
+          var(--grid-size) var(--grid-size);
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
 }
 
 .all-container{
@@ -92,74 +55,25 @@ body {
     opacity: 0.24;
 }
 
-.full-width-right-align:hover{
-    opacity: 0.64;
-    transition: var(--global-transition);
-}
-
-.sun-moon-hide{
-    display: none;
-}
-
-.sun path, .moon path{
-    fill: var(--color-text-default);
-}
-
 .profile-card{
     display: flex;
     flex-direction: column;
-    padding: 4em;
+    padding: 3rem 4rem;
     background-color: var(--color-card-background);
-    border-radius: 1em;
-    box-shadow:0 0 4em rgba(14,17,18,0.05);
+    border-radius: 0.125rem;
     max-width: 32em;
-}
-
-@keyframes wiggle {
-    0% { transform: rotate(0deg); }
-   25% { transform: rotate(5deg); }
-   50% { transform: rotate(0deg); }
-   75% { transform: rotate(-5deg); }
-  100% { transform: rotate(0deg); }
-}
-
-.wiggle {
-    transition: var(--global-transition);
-    animation: none;
-  }
-
-.wiggle:hover {
-  display: inline-block;
-  animation: wiggle 1.5s infinite;
-}
-
-.footer-links{
-    display: flex;
-    flex-direction: row;
-    padding-top: 1.6em;
-}
-
-.footer-links a{
-    padding: 0 .8em;
-}
-
-.footer-links svg path{
-    fill: var(--color-primary-link); 
-}
-
-.footer-links svg path:hover{
-    fill: var(--color-primary-link-hover);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0,0,0, 0.24);
 }
 
 h1{
-    font-family: 'Gowun Batang', sans-serif;
-    font-size: 1.6em;
-    letter-spacing: -.02em;
+    font-family: 'Brygada 1918', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
 }
 
 p{
     font-size: 1em;
-    line-height: 1.6em;
+    line-height: 1.35em;
 }
 
 a{
@@ -170,13 +84,23 @@ a:hover{
     color: var(--color-primary-link-hover);
 }
 
-/* Mobile view */
+/* Tablet view */
 @media only screen and (max-width: 680px) {
     .profile-card{
-        padding: 2em 3.2em;
+        padding: 2rem 3rem;
     }
 
     .all-container{
-        padding: 1em;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .profile-card{
+        padding: 1rem 1.5rem;
+    }
+
+    .all-container{
+        padding: 1rem;
     }
 }
