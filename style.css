@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&family=Brygada+1918&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petrona:700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans');
+
 
 /* Default colors */
 :root {
-    --color-primary-hover: #E8BFB5;
-    --color-primary-link: #CB4242;
-    --color-primary-link-hover: #DD823A;
+    --color-primary-link: #456789;
+    --color-primary-link-hover: #89abcd;
 
-    --color-text-default: #163736;
-    --color-card-background: #EED8D2;
+    --color-text-default: #012345;
+    --color-card-background: #F2E2D2;
 
-    --color-background: #163736;
+    --color-background: #012345;
 
     /*
     --color-bg-darker: hsl(24, 22%, 53%);
@@ -31,7 +32,7 @@ html, body {
 
 body {
     background-color:var(--color-background);
-    --grid-color: #1F4A48;
+    --grid-color: #123456;
     --grid-size: 1.5rem;
     background-image: linear-gradient(var(--grid-color) 1px, transparent 1px),
           linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
@@ -66,9 +67,10 @@ body {
 }
 
 h1{
-    font-family: 'Brygada 1918', sans-serif;
+    font-family: 'Petrona', sans-serif;
     font-size: 2em;
     font-weight: 700;
+    letter-spacing: -0.1rem;
 }
 
 p{
